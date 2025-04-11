@@ -33,6 +33,7 @@ public class CharterGenerator {
         FemaleBodyType = new String[] {"Hourglass", "Pear", "Inverted Pear", "Rectangle", "Apple"};
         Races = new String[] {"Human", "Yokai", "Wood Elf", "Sun Elf", "Dark Elf", "Half Elf","Oni", "Ork", "Dragon Born", "Fairy", "Pixy",
                                  "Gnome", "Dwarf"};
+        YokaiTypes = new String[] {"Fox", "Wolf", "Bunny", "Tanuki", "Cat", "Kappa", "Yurei", "Badger","Futakuchi-onna"};
 
         this.genderHolder = getGender();
         this.raceHolder = getRace();
