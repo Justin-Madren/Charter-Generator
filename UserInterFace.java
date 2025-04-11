@@ -72,6 +72,40 @@ public class UserInterFace {
         }
     }
     /*
+     * Prints out all the personality traits it calls the 
+     * Core Fun and SMLLT methods from the Personality Gen Class.
+     */
+    public void PersontalityEverthingPrinter(){
+        PersonalityGenerator personality = new PersonalityGenerator();
+        System.out.println("-----------------All Personality Traits------------------");
+        personality.CorePersonalityPrinter();
+        personality.FunGenericTrarePrinter();
+        personality.SocialMoralLoveLearningTeachingPrinter();
+    }
+
+    public void allChartersWithPersonalityInTheScene(){
+        SceneGenerator scene = new SceneGenerator();
+        System.out.println("---------------Scene----------------");
+        scene.ScenePrinter();
+        for(int i = 0; i < scene.amountOfCharters() ; i++){
+            CharterPrinter();
+            PersontalityEverthingPrinter();
+        }
+
+    }
+
+    public void allChartersInTheSceneWithBackgroundsAndPersonalitys(){
+        SceneGenerator scene = new SceneGenerator();
+        System.out.println("---------------Scene----------------");
+        scene.ScenePrinter();
+        for(int i = 0; i < scene.amountOfCharters() ; i++){
+            CharterPrinter();
+            PersontalityEverthingPrinter();
+            BackGroundPrinter();;
+        }
+    }
+    
+    /*
      * The actual interface that the user will intercat with it prints out all the options
      * and there are if statments checking the input and then printing out what the user
      * wants to generate. It is in a while loop that will not end till the user enters the
@@ -79,13 +113,16 @@ public class UserInterFace {
      */
     public void Interface(){
         while(true){
-            System.out.println("---------------------Interface--------------------");
-            System.out.println("Generate a Charter                       : Enter 1");
-            System.out.println("Generate a Background                    : Enter 2");
-            System.out.println("Generate a Scene                         : Enter 3");
-            System.out.println("Generate Scene and the Charters          : Enter 4");
-            System.out.println("Generate Scene, Charters with Background : Enter 5");
-            System.out.println("Ending the program                       : Enter 6");
+            System.out.println("---------------------------Interface--------------------------");
+            System.out.println("Generate a Charter                                    : Enter 1");
+            System.out.println("Generate a Background                                 : Enter 2");
+            System.out.println("Generate a Scene                                      : Enter 3");
+            System.out.println("Generate a Pesonality                                 : Enter 4");
+            System.out.println("Generate Scene and the Charters                       : Enter 5");
+            System.out.println("Generate Scene with Charters & Pesonality             : Enter 6");
+            System.out.println("Generate Scene, Charters with Background              : Enter 7");
+            System.out.println("Generate Scene, Charters with Pesonality & Background : Enter 8");
+            System.out.println("Ending the program                                    : Enter 9");
             int answer = scnr.nextInt();
             if(answer == 1){
                 CharterPrinter();
@@ -94,10 +131,16 @@ public class UserInterFace {
             }else if(answer == 3){
                 ScenePrinter();
             }else if(answer == 4){
-                allChartersInTheScene();
+                PersontalityEverthingPrinter();
             }else if(answer == 5){
-                allChartersInTheSceneAndBackgrounds();
+                allChartersInTheScene();
             }else if(answer == 6){
+                allChartersWithPersonalityInTheScene();
+            }else if(answer == 7){
+                allChartersInTheSceneAndBackgrounds();
+            }else if(answer == 8){
+                allChartersInTheSceneWithBackgroundsAndPersonalitys();
+            }else if(answer == 9){
                 System.out.println("Ending Program");
                 break;
             }else{
