@@ -259,6 +259,40 @@ public class CharterGenerator {
                 System.out.println("Height Ft : " + ftHeightHolder);
            
     }
+    // public String CharterPrinter() {
+    //     StringBuilder sb = new StringBuilder();
+    
+    //     String raceHolder = this.raceHolder;
+    //     String yokaiHolder = getYokaiType();
+    //     String genderHolder = this.genderHolder;
+    //     String maleBodyTypeHolder = getMaleBodyType();
+    //     String femaleBodyTypeHolder = getFemaleBodyType();
+    //     String themeHolder = getTheme();
+    //     String classHolder = getClassOrJob();
+    //     String traitHolder = getSpecialTrait();
+    //     String itemHolder = getItem();
+    //     double cmHightHolder = this.heightHolder;
+    //     String ftHeightHolder = getHeightCoverstion();
+    
+    //     sb.append("Race:       ").append(raceHolder).append("\n");
+    //     if (raceHolder.equals("Yokai")) {
+    //         sb.append("Type:       ").append(yokaiHolder).append("\n");
+    //     }
+    //     sb.append("Gender:     ").append(genderHolder).append("\n");
+    //     if (genderHolder.equals("Male")) {
+    //         sb.append("Body Type:  ").append(maleBodyTypeHolder).append("\n");
+    //     } else {
+    //         sb.append("Body Type:  ").append(femaleBodyTypeHolder).append("\n");
+    //     }
+    //     sb.append("Theme:      ").append(themeHolder).append("\n");
+    //     sb.append("Class/Job:  ").append(classHolder).append("\n");
+    //     sb.append("Trait:      ").append(traitHolder).append("\n");
+    //     sb.append("Item:       ").append(itemHolder).append("\n");
+    //     sb.append("Height cm:  ").append(cmHightHolder).append("\n");
+    //     sb.append("Height Ft:  ").append(ftHeightHolder).append("\n");
+    
+    //     return sb.toString();
+    // }
 
     public static void main(String[] args) {
         CharterGenerator testing = new CharterGenerator();

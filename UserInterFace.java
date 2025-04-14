@@ -100,8 +100,8 @@ public class UserInterFace {
         scene.ScenePrinter();
         for(int i = 0; i < scene.amountOfCharters() ; i++){
             CharterPrinter();
-            PersontalityEverthingPrinter();
             BackGroundPrinter();;
+            PersontalityEverthingPrinter();
         }
     }
     
@@ -147,6 +147,7 @@ public class UserInterFace {
                 System.out.println("Error : INVALID INPUT");
             }
         }
+
     }
     public static void main(String[] args) {
         UserInterFace testing = new UserInterFace();
