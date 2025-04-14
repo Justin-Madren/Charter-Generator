@@ -28,7 +28,7 @@ This Java project is a **modular content generator** that builds randomized char
 
 ## 🖥️ GUI Development (In Progress)
 
-We're currently developing a Java Swing-based GUI to improve usability beyond the console. Current capabilities include:
+I am currently developing a Java Swing-based GUI to improve usability beyond the console. Current capabilities include:
 
 - A button to generate a character
 - Simple layout with a label that updates based on button presses

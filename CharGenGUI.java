@@ -59,7 +59,7 @@ public class CharGenGUI implements ActionListener {
 
         panel = new JPanel();
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
-        panel.setLayout(new GridLayout(0,1,10,10));
+        panel.setLayout(new GridLayout(5,2,10,10));
         panel.add(buttonCharGen);
         panel.add(buttonBacGro);
         panel.add(buttonScene);
