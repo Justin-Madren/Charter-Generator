@@ -126,6 +126,22 @@ public class BackGroundGenerator {
         System.out.println("Number of Sisters :  " + getNumberOfSisters());
         System.out.println("BackGround :         " + getBackGround());
     }
+
+    public String BackGroundPrinterForGUI(){
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("Area From : ").append(getRandomAreaFrom()).append("\n");
+        sb.append("Father Condition : ").append(getFatherCondition()).append("\n");
+        sb.append("Mother Condition : ").append(getMotherCondition()).append("\n");
+        sb.append("Number of Sylbings : ").append(getNumberOfSylbings()).append("\n");
+        sb.append("Number of Borthers : ").append(getNumberOfBrothers()).append("\n");
+        sb.append("Number of Sisters : ").append(getNumberOfSisters()).append("\n");
+        sb.append("BackGround :  ").append(getBackGround()).append("\n");
+
+
+        return sb.toString();
+    }
+
     public static void main(String[] args) {
        BackGroundGenerator display = new BackGroundGenerator();
        display.BackGroundPrinter();

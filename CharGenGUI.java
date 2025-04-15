@@ -7,7 +7,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 //import javax.swing.JLabel;
 import javax.swing.JPanel;
-//import javax.swing.JScrollPane;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
 public class CharGenGUI implements ActionListener {
@@ -55,7 +55,7 @@ public class CharGenGUI implements ActionListener {
 
         outputArea = new JTextArea(10, 40);
         outputArea.setEditable(false);
-        //JScrollPane scrollPane = new JScrollPane(outputArea);
+        JScrollPane scrollPane = new JScrollPane(outputArea);
 
         panel = new JPanel();
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
@@ -71,6 +71,7 @@ public class CharGenGUI implements ActionListener {
         //panel.add(lable);
 
         frame.add(panel, BorderLayout.CENTER);
+        frame.add(scrollPane, BorderLayout.SOUTH);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setTitle("Charter Generator GUI");
         frame.pack();
@@ -83,19 +84,27 @@ public class CharGenGUI implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         UserInterFace testing = new UserInterFace();
+        CharterGenerator charGen = new CharterGenerator();
+        BackGroundGenerator bacGorndGen = new BackGroundGenerator();
+        SceneGenerator snenGen = new SceneGenerator();
+        PersonalityGenerator perGen = new PersonalityGenerator();
         
         if(e.getSource() == buttonCharGen){
-            testing.CharterPrinter();
+            String result = charGen.CharterPrinterForGUI();
+            outputArea.setText(result);
         }else if(e.getSource() == buttonBacGro){
-            testing.BackGroundPrinter();
+            String result = bacGorndGen.BackGroundPrinterForGUI();
+            outputArea.setText(result);
         }else if(e.getSource() == buttonScene){
-            testing.ScenePrinter();
+            String result = snenGen.ScenePrintForGUI();
+            outputArea.setText(result);
         }else if(e.getSource() == buttonScenePlusChar){
             testing.allChartersInTheScene();
         }else if(e.getSource() == buttonScenePlusCharAndBacGro){
             testing.allChartersInTheSceneAndBackgrounds();
         }else if(e.getSource() == buttonPersonality){
-            testing.PersontalityEverthingPrinter();
+            String result = perGen.PesonalityPrinterForGUI();
+            outputArea.setText(result);
         }else if(e.getSource() == buttonCharterPlusPersonality){
             testing.allChartersWithPersonalityInTheScene();
         }else if(e.getSource() == buttonChartersInTheSceneWithBackgroundsAndPersonalitys){

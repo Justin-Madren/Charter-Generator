@@ -201,6 +201,36 @@ public class PersonalityGenerator {
     }
 
 
+    public String PesonalityPrinterForGUI(){
+        StringBuilder sb = new StringBuilder();
+        
+        sb.append("-----------Core Personality---------").append("\n");
+        sb.append("Openness To Experience :").append(getOpennessToExperience()).append("\n");
+        sb.append("Conscientiousness :").append(getConscientiousness()).append("\n");
+        sb.append("Extraversion :").append(getExtraversion()).append("\n");
+        sb.append("Agreeableness :").append(getAgreeableness()).append("\n");
+        sb.append("Neuroticism :").append(getNeuroticism()).append("\n");
+        sb.append("------Generic Personality Traits---------").append("\n");
+        sb.append("Sense of humor :").append(getSenseOfHumor()).append("\n");
+        sb.append("Confidence :").append(getConfidence()).append("\n");
+        sb.append("Ambition :").append(getAmbition()).append("\n");
+        sb.append("Empathy :").append(getEmpathy()).append("\n");
+        sb.append("Risk tolerance :").append(getRiskTolerance()).append("\n");
+        sb.append("Temperament :").append(getTemperament()).append("\n");
+        sb.append("Curiosity :").append(getCuriosity()).append("\n");
+        sb.append("Loyalty :").append(getLoyalty()).append("\n");
+        sb.append("---Allingmant Love Learning Social Teaching---").append("\n");
+        sb.append("Talkativeness :").append(getTalkativeness()).append("\n");
+        sb.append("Politeness :").append(getPoliteness()).append("\n");
+        sb.append("Charm :").append(getCharm()).append("\n");
+        sb.append("MoralAlignment :").append(getMoralAlignment()).append("\n");
+        sb.append("Love Language :").append(getLoveLanguage()).append("\n");
+        sb.append("Learning Style :").append(getLearningStyle()).append("\n");
+        sb.append("Leadership Style :").append(getLeadershipStyle()).append("\n");
+
+        return sb.toString();
+    }
+
     public static void main(String[] args) {
         PersonalityGenerator test = new PersonalityGenerator();
         //test.CorePersonalityPrinter();

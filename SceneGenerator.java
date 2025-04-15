@@ -66,6 +66,17 @@ public class SceneGenerator {
         System.out.println("Number of People : " + amountOfCharters());
     }
 
+    public String ScenePrintForGUI(){
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("Activity : ").append(getWhatCharterIsDoing()).append("\n");
+        sb.append("Weather : ").append(getWeather()).append("\n");
+        sb.append("Time of Day :").append(getTimeOfDay()).append("\n");
+        sb.append("Numner of People :").append(amountOfCharters()).append("\n");
+
+        return sb.toString();
+    }
+
 
 
     public static void main(String[] args) {
