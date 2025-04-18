@@ -274,6 +274,7 @@ public class CharterGenerator {
         double cmHightHolder = this.heightHolder;
         String ftHeightHolder = getHeightCoverstion();
     
+        sb.append("-----------Charter---------").append("\n");
         sb.append("Race       :       ").append(raceHolder).append("\n");
         if (raceHolder.equals("Yokai")) {
             sb.append("Type       :       ").append(yokaiHolder).append("\n");

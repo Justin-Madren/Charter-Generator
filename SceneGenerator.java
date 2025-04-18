@@ -69,6 +69,7 @@ public class SceneGenerator {
     public String ScenePrintForGUI(){
         StringBuilder sb = new StringBuilder();
 
+        sb.append("-----------Scene---------").append("\n");
         sb.append("Activity : ").append(getWhatCharterIsDoing()).append("\n");
         sb.append("Weather : ").append(getWeather()).append("\n");
         sb.append("Time of Day :").append(getTimeOfDay()).append("\n");

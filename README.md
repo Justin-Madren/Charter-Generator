@@ -32,12 +32,11 @@ I am currently developing a Java Swing-based GUI to improve usability beyond the
 
 - A button to generate a character
 - Simple layout with a label that updates based on button presses
-- Calls existing logic through `UserInterFace.CharterPrinter()`
+- Calls New methods in all the generator classes call *GenName*PrinterForGUI
 
 ### Next Steps for the GUI:
-- Display character details directly in the window instead of the console
-- Add buttons for background and scene generation
-- Use `JTextArea` for multi-line, scrollable output
+- Making the display look better not a bland
+- Have the display for the output change based on the amout of data given
 - Add user input options (e.g., number of characters)
 
 ---

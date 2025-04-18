@@ -130,6 +130,7 @@ public class BackGroundGenerator {
     public String BackGroundPrinterForGUI(){
         StringBuilder sb = new StringBuilder();
 
+        sb.append("-----------BackGround---------").append("\n");
         sb.append("Area From : ").append(getRandomAreaFrom()).append("\n");
         sb.append("Father Condition : ").append(getFatherCondition()).append("\n");
         sb.append("Mother Condition : ").append(getMotherCondition()).append("\n");
